@@ -95,15 +95,15 @@
 		FABE4D6D211AC6A700D4FBC8 /* MagiLoadRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */,
-				FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */,
-				FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */,
 				FABE4D71211AC6A700D4FBC8 /* UIView+Position.swift */,
-				FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */,
-				FABE4D73211AC6A700D4FBC8 /* Magi.swift */,
+				FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */,
 				FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */,
-				FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */,
 				FABE4D76211AC6A700D4FBC8 /* UICollectionView+Magi.swift */,
+				FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */,
+				FABE4D73211AC6A700D4FBC8 /* Magi.swift */,
+				FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */,
+				FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */,
+				FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */,
 			);
 			path = MagiLoadRefresh;
 			sourceTree = "<group>";

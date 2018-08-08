@@ -70,9 +70,11 @@ class Magi {
     }
     
     public func getDataAndSet() {
-        if self.totalDataCount() == 0 {
+        guard let _ = placeHolder else { return }
+        if totalDataCount() == 0 {
             show()
-        } else {
+        }
+        else {
             hide()
         }
     }

@@ -48,12 +48,12 @@ extension UITableView: MagiInitAware {
     
     
     //section
-    @objc  func magi_insertSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
+    @objc func magi_insertSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
         magi_insertSections(sections, with: animation)
-        magi.getDataAndSet()
+            magi.getDataAndSet()
     }
     
-    @objc  func magi_deleteSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
+    @objc func magi_deleteSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
         magi_deleteSections(sections, with: animation)
         magi.getDataAndSet()
     }
@@ -71,7 +71,6 @@ extension UITableView: MagiInitAware {
     
     //reloadData
     @objc func magi_reloadData() {
-        self.magi_reloadData()
         magi.getDataAndSet()
     }
     
