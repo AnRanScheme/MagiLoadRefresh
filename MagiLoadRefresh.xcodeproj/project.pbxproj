@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FABE4D80211AC6A700D4FBC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D6B211AC6A700D4FBC8 /* LaunchScreen.storyboard */; };
+		FABE4D82211AC6A700D4FBC8 /* UIScrollView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */; };
+		FABE4D83211AC6A700D4FBC8 /* MagiRunTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */; };
+		FABE4D84211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */; };
+		FABE4D85211AC6A700D4FBC8 /* UIView+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D71211AC6A700D4FBC8 /* UIView+Position.swift */; };
+		FABE4D86211AC6A700D4FBC8 /* MagiPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */; };
+		FABE4D87211AC6A700D4FBC8 /* Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D73211AC6A700D4FBC8 /* Magi.swift */; };
+		FABE4D88211AC6A700D4FBC8 /* UITableView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */; };
+		FABE4D89211AC6A700D4FBC8 /* MagiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */; };
+		FABE4D8A211AC6A700D4FBC8 /* UICollectionView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D76211AC6A700D4FBC8 /* UICollectionView+Magi.swift */; };
+		FABE4D8B211AC6A700D4FBC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D77211AC6A700D4FBC8 /* Assets.xcassets */; };
+		FABE4D8D211AC6A700D4FBC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D79211AC6A700D4FBC8 /* Main.storyboard */; };
+		FABE4D91211AC6A700D4FBC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D7D211AC6A700D4FBC8 /* Info.plist */; };
+		FABE4D9E211AC98700D4FBC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D96211AC98700D4FBC8 /* AppDelegate.swift */; };
+		FABE4D9F211AC98700D4FBC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D98211AC98700D4FBC8 /* ViewController.swift */; };
+		FABE4DA0211AC98700D4FBC8 /* MyEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D99211AC98700D4FBC8 /* MyEmptyView.xib */; };
+		FABE4DA1211AC98700D4FBC8 /* MyEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D9A211AC98700D4FBC8 /* MyEmptyView.swift */; };
+		FABE4DA2211AC98700D4FBC8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D9B211AC98700D4FBC8 /* TableViewController.swift */; };
+		FABE4DA3211AC98700D4FBC8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D9C211AC98700D4FBC8 /* WebViewController.swift */; };
+		FABE4DA4211AC98700D4FBC8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D9D211AC98700D4FBC8 /* CollectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA0EEC1B210F17C100FDB40E /* magiLoadingPlaceHolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magiLoadingPlaceHolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABE4D6B211AC6A700D4FBC8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Magi.swift"; sourceTree = "<group>"; };
+		FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRunTime.swift; sourceTree = "<group>"; };
+		FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiBasePlaceHolderView.swift; sourceTree = "<group>"; };
+		FABE4D71211AC6A700D4FBC8 /* UIView+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Position.swift"; sourceTree = "<group>"; };
+		FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiPlaceHolderView.swift; sourceTree = "<group>"; };
+		FABE4D73211AC6A700D4FBC8 /* Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magi.swift; sourceTree = "<group>"; };
+		FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Magi.swift"; sourceTree = "<group>"; };
+		FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiProtocol.swift; sourceTree = "<group>"; };
+		FABE4D76211AC6A700D4FBC8 /* UICollectionView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Magi.swift"; sourceTree = "<group>"; };
+		FABE4D77211AC6A700D4FBC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FABE4D79211AC6A700D4FBC8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FABE4D7D211AC6A700D4FBC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABE4D96211AC98700D4FBC8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FABE4D98211AC98700D4FBC8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FABE4D99211AC98700D4FBC8 /* MyEmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyEmptyView.xib; sourceTree = "<group>"; };
+		FABE4D9A211AC98700D4FBC8 /* MyEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEmptyView.swift; sourceTree = "<group>"; };
+		FABE4D9B211AC98700D4FBC8 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FABE4D9C211AC98700D4FBC8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		FABE4D9D211AC98700D4FBC8 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA0EEC18210F17C100FDB40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0EEC12210F17C000FDB40E = {
+			isa = PBXGroup;
+			children = (
+				FABE4D69211AC6A700D4FBC8 /* MagiLoadRefresh */,
+				FA0EEC1C210F17C100FDB40E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA0EEC1C210F17C100FDB40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA0EEC1B210F17C100FDB40E /* magiLoadingPlaceHolder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FABE4D69211AC6A700D4FBC8 /* MagiLoadRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				FABE4D94211AC79900D4FBC8 /* SupportingFiles */,
+				FABE4D93211AC71100D4FBC8 /* Resource */,
+				FABE4D6D211AC6A700D4FBC8 /* MagiLoadRefresh */,
+				FABE4D97211AC98700D4FBC8 /* LoadingPlacegolderExample */,
+				FABE4D95211AC98700D4FBC8 /* Delegate */,
+			);
+			path = MagiLoadRefresh;
+			sourceTree = "<group>";
+		};
+		FABE4D6D211AC6A700D4FBC8 /* MagiLoadRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */,
+				FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */,
+				FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */,
+				FABE4D71211AC6A700D4FBC8 /* UIView+Position.swift */,
+				FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */,
+				FABE4D73211AC6A700D4FBC8 /* Magi.swift */,
+				FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */,
+				FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */,
+				FABE4D76211AC6A700D4FBC8 /* UICollectionView+Magi.swift */,
+			);
+			path = MagiLoadRefresh;
+			sourceTree = "<group>";
+		};
+		FABE4D93211AC71100D4FBC8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FABE4D79211AC6A700D4FBC8 /* Main.storyboard */,
+				FABE4D6B211AC6A700D4FBC8 /* LaunchScreen.storyboard */,
+				FABE4D77211AC6A700D4FBC8 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FABE4D94211AC79900D4FBC8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FABE4D7D211AC6A700D4FBC8 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FABE4D95211AC98700D4FBC8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FABE4D96211AC98700D4FBC8 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		FABE4D97211AC98700D4FBC8 /* LoadingPlacegolderExample */ = {
+			isa = PBXGroup;
+			children = (
+				FABE4D98211AC98700D4FBC8 /* ViewController.swift */,
+				FABE4D99211AC98700D4FBC8 /* MyEmptyView.xib */,
+				FABE4D9A211AC98700D4FBC8 /* MyEmptyView.swift */,
+				FABE4D9B211AC98700D4FBC8 /* TableViewController.swift */,
+				FABE4D9C211AC98700D4FBC8 /* WebViewController.swift */,
+				FABE4D9D211AC98700D4FBC8 /* CollectionViewController.swift */,
+			);
+			path = LoadingPlacegolderExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA0EEC1A210F17C100FDB40E /* magiLoadingPlaceHolder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0EEC2D210F17C200FDB40E /* Build configuration list for PBXNativeTarget "magiLoadingPlaceHolder" */;
+			buildPhases = (
+				FA0EEC17210F17C100FDB40E /* Sources */,
+				FA0EEC18210F17C100FDB40E /* Frameworks */,
+				FA0EEC19210F17C100FDB40E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = magiLoadingPlaceHolder;
+			productName = magiLoadingPlaceHolder;
+			productReference = FA0EEC1B210F17C100FDB40E /* magiLoadingPlaceHolder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA0EEC13210F17C000FDB40E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = anran;
+				TargetAttributes = {
+					FA0EEC1A210F17C100FDB40E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FA0EEC16210F17C000FDB40E /* Build configuration list for PBXProject "MagiLoadRefresh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA0EEC12210F17C000FDB40E;
+			productRefGroup = FA0EEC1C210F17C100FDB40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA0EEC1A210F17C100FDB40E /* magiLoadingPlaceHolder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA0EEC19210F17C100FDB40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABE4D8B211AC6A700D4FBC8 /* Assets.xcassets in Resources */,
+				FABE4D80211AC6A700D4FBC8 /* LaunchScreen.storyboard in Resources */,
+				FABE4D91211AC6A700D4FBC8 /* Info.plist in Resources */,
+				FABE4DA0211AC98700D4FBC8 /* MyEmptyView.xib in Resources */,
+				FABE4D8D211AC6A700D4FBC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA0EEC17210F17C100FDB40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABE4D83211AC6A700D4FBC8 /* MagiRunTime.swift in Sources */,
+				FABE4D87211AC6A700D4FBC8 /* Magi.swift in Sources */,
+				FABE4D8A211AC6A700D4FBC8 /* UICollectionView+Magi.swift in Sources */,
+				FABE4DA3211AC98700D4FBC8 /* WebViewController.swift in Sources */,
+				FABE4D85211AC6A700D4FBC8 /* UIView+Position.swift in Sources */,
+				FABE4DA1211AC98700D4FBC8 /* MyEmptyView.swift in Sources */,
+				FABE4D88211AC6A700D4FBC8 /* UITableView+Magi.swift in Sources */,
+				FABE4D82211AC6A700D4FBC8 /* UIScrollView+Magi.swift in Sources */,
+				FABE4D9E211AC98700D4FBC8 /* AppDelegate.swift in Sources */,
+				FABE4D9F211AC98700D4FBC8 /* ViewController.swift in Sources */,
+				FABE4DA2211AC98700D4FBC8 /* TableViewController.swift in Sources */,
+				FABE4D86211AC6A700D4FBC8 /* MagiPlaceHolderView.swift in Sources */,
+				FABE4D89211AC6A700D4FBC8 /* MagiProtocol.swift in Sources */,
+				FABE4DA4211AC98700D4FBC8 /* CollectionViewController.swift in Sources */,
+				FABE4D84211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA0EEC2B210F17C200FDB40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA0EEC2C210F17C200FDB40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA0EEC2E210F17C200FDB40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLoadRefresh/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.magiLoadingPlaceHolder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA0EEC2F210F17C200FDB40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiLoadRefresh/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.magiLoadingPlaceHolder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA0EEC16210F17C000FDB40E /* Build configuration list for PBXProject "MagiLoadRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0EEC2B210F17C200FDB40E /* Debug */,
+				FA0EEC2C210F17C200FDB40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0EEC2D210F17C200FDB40E /* Build configuration list for PBXNativeTarget "magiLoadingPlaceHolder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0EEC2E210F17C200FDB40E /* Debug */,
+				FA0EEC2F210F17C200FDB40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA0EEC13210F17C000FDB40E /* Project object */;
+}

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="wlg-LX-inA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoadingPlaceHolderDemo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="magiLoadingPlaceHolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6kn-Dj-YNW"/>
+                        <viewControllerLayoutGuide type="bottom" id="fa2-iD-htL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrQ-K2-AEd">
+                                <rect key="frame" x="137.5" y="182.5" width="100" height="34"/>
+                                <state key="normal" title="UITableVIew">
+                                    <color key="titleColor" red="0.01176470588" green="0.63921568630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ipg-8o-Sm2" kind="push" identifier="pushToTableViewController" id="ttb-Oh-Nf0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPi-tV-xUO">
+                                <rect key="frame" x="150" y="450.5" width="75" height="34"/>
+                                <state key="normal" title="WebView">
+                                    <color key="titleColor" red="0.01176470588" green="0.63921568630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kiz-R8-lcT" kind="push" identifier="pushToWebViewController" id="SWq-sP-hBP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c09-dN-ZrG">
+                                <rect key="frame" x="117" y="316" width="141" height="34"/>
+                                <state key="normal" title="UIColllectionView">
+                                    <color key="titleColor" red="0.01176470588" green="0.63921568630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Y3Y-Lt-Oaa" kind="push" identifier="pushToCollectionViewController" id="ub8-Wh-LmB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wPi-tV-xUO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xhc-Hp-Gze"/>
+                            <constraint firstItem="RrQ-K2-AEd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kSX-sR-A6k"/>
+                            <constraint firstItem="c09-dN-ZrG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m56-YJ-pSu"/>
+                            <constraint firstItem="c09-dN-ZrG" firstAttribute="top" secondItem="RrQ-K2-AEd" secondAttribute="bottom" constant="100" id="mro-jq-Zyc"/>
+                            <constraint firstItem="wPi-tV-xUO" firstAttribute="top" secondItem="c09-dN-ZrG" secondAttribute="bottom" constant="100" id="ocM-BL-v3a"/>
+                            <constraint firstItem="c09-dN-ZrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJf-Ws-Ppe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LoadingPlaceHolderDemo" id="vYW-lb-Ml9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510.625" y="-956.0333333333333"/>
+        </scene>
+        <!--UICollectionView-->
+        <scene sceneID="15r-T5-ybj">
+            <objects>
+                <collectionViewController storyboardIdentifier="CollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y3Y-Lt-Oaa" customClass="CollectionViewController" customModule="magiLoadingPlaceHolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VSF-Qz-SMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BsF-Hr-Rn7">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nl6-86-aFW">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Y3Y-Lt-Oaa" id="tfm-7H-3bY"/>
+                            <outlet property="delegate" destination="Y3Y-Lt-Oaa" id="2We-6f-8OJ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="UICollectionView" id="QIP-qi-Lzh">
+                        <rightBarButtonItems>
+                            <barButtonItem title="添加" id="3M1-lq-cK1">
+                                <connections>
+                                    <action selector="addAction:" destination="Y3Y-Lt-Oaa" id="lcD-J5-QSB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="删除" id="CUw-CR-l2B">
+                                <connections>
+                                    <action selector="deleteAction:" destination="Y3Y-Lt-Oaa" id="zXM-nx-vva"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imr-qm-esU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.25" y="-959.36833333333323"/>
+        </scene>
+        <!--网页加载-->
+        <scene sceneID="eyn-MX-GQ4">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kiz-R8-lcT" customClass="WebViewController" customModule="magiLoadingPlaceHolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1rU-Em-ppz"/>
+                        <viewControllerLayoutGuide type="bottom" id="AK4-Pk-o2L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="emL-pq-B8f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="网页加载" id="99U-GO-W7J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qg0-jz-5NJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068.75" y="-205.65833333333333"/>
+        </scene>
+        <!--UITableView-->
+        <scene sceneID="TVQ-5d-sBM">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ipg-8o-Sm2" customClass="TableViewController" customModule="magiLoadingPlaceHolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Qt-tL-36X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lMG-Py-WyP">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lMG-Py-WyP" id="Oyg-4o-3IL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ipg-8o-Sm2" id="hJk-qo-bAE"/>
+                            <outlet property="delegate" destination="Ipg-8o-Sm2" id="fWW-yW-29n"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="UITableView" id="3Fy-cZ-15j">
+                        <rightBarButtonItems>
+                            <barButtonItem title="添加" style="done" id="CO7-Gv-rYj">
+                                <connections>
+                                    <action selector="addAction:" destination="Ipg-8o-Sm2" id="OrO-O1-Xe3"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="删除" style="done" id="hCu-r8-l4k">
+                                <connections>
+                                    <action selector="deleteAction:" destination="Ipg-8o-Sm2" id="V2r-Mp-zJ3"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cR1-9C-Mr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.75" y="-1690.8449999999998"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WKo-8I-eQB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wlg-LX-inA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r93-nI-hBj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7oC-sw-hZQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1E-hw-56H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.5" y="-956.0333333333333"/>
+        </scene>
+    </scenes>
+</document>
