@@ -70,13 +70,13 @@ class MagiPlaceHolderView: MagiBasePlaceHolderView {
     //内容物-垂直方向偏移 (此属性与contentViewY 互斥，只有一个会有效)
     public var contentViewOffset: CGFloat = 0 {
         didSet {
-            self.contentView.centerY += contentViewOffset
+            contentView.magi_centerY += contentViewOffset
         }
     }
     // 内容物-Y坐标 (此属性与contentViewOffset 互斥，只有一个会有效)
     public var contentViewY: CGFloat = 0 {
         didSet {
-            self.contentView.top = contentViewY
+            contentView.magi_top = contentViewY
         }
     }
     //图片可设置固定大小 (default=图片实际大小)
@@ -189,14 +189,14 @@ class MagiPlaceHolderView: MagiBasePlaceHolderView {
     //MARK: ----- 初始化方法 ----
     override func prepare() {
         super.prepare()
-        self.centerY = 1000//默认值，用来判断是否设置过content的Y值
+        magi_centerY = 1000//默认值，用来判断是否设置过content的Y值
     }
     
     override func setupSubviews() {
         super.setupSubviews()
         
         //最大宽度（ScrollView 的宽 - 30）
-        contentMaxWidth = width - CGFloat(kActionBtnHorizontalMargin)
+        contentMaxWidth = magi_width - CGFloat(kActionBtnHorizontalMargin)
         contentWidth = 0
         contentHeight = 0
         subViweMargin = self.subViewMargin
@@ -277,10 +277,10 @@ class MagiPlaceHolderView: MagiBasePlaceHolderView {
     
     func setSubViewFrame() {
         //获取self原始宽高
-        let scrollViewWidth = width
-        let scrollViewHeight = height
+        let scrollViewWidth = magi_width
+        let scrollViewHeight = magi_height
         //重新设置self的frame（大小为content的大小）
-        size = CGSize(width: contentWidth,
+        magi_size = CGSize(width: contentWidth,
                       height: contentHeight)
         center = CGPoint(x: scrollViewWidth*0.5,
                          y: scrollViewHeight*0.5)
@@ -300,21 +300,21 @@ class MagiPlaceHolderView: MagiBasePlaceHolderView {
             contentView.addSubview(titleLabel)
             contentView.addSubview(detailLabel)
             contentView.addSubview(actionButton)
-            promptImageView.centerX = centerX
-            promptImageView.centerY = centerY
-            titleLabel.centerX = centerX
-            detailLabel.centerX = centerX
-            actionButton.centerX = centerX
+            promptImageView.magi_centerX = magi_centerX
+            promptImageView.magi_centerY = magi_centerY
+            titleLabel.magi_centerX = magi_centerX
+            detailLabel.magi_centerX = magi_centerX
+            actionButton.magi_centerX = magi_centerX
         }
         
         // 有无偏移
         if contentViewOffset > 0 {
-            contentView.centerY += contentViewOffset
+            contentView.magi_centerY += contentViewOffset
         }
         
         // 有无设置Y坐标
         if contentViewY < 1000 {
-            contentView.top = contentViewY
+            contentView.magi_top = contentViewY
         }
     }
 
@@ -344,10 +344,10 @@ extension MagiPlaceHolderView {
                                        y: 0,
                                        width: imgViewWidth,
                                        height: imgViewHeight)
-        promptImageView.center = CGPoint(x: centerX,
-                                         y: centerY-imgViewHeight*0.5)
-        contentWidth = promptImageView.width
-        contentHeight = promptImageView.maxY
+        promptImageView.center = CGPoint(x: magi_centerX,
+                                         y: magi_centerY-imgViewHeight*0.5)
+        contentWidth = promptImageView.magi_width
+        contentHeight = promptImageView.magi_maxY
         
     }
     
@@ -363,13 +363,13 @@ extension MagiPlaceHolderView {
                                   y: contentHeight+subViweMargin,
                                   width: width,
                                   height: fontSize)
-        titleLabel.center = CGPoint(x: centerX,
-                                    y: titleLabel.centerY)
+        titleLabel.center = CGPoint(x: magi_centerX,
+                                    y: titleLabel.magi_centerY)
         titleLabel.font = titleLabFont
         titleLabel.textColor = titleLabTextColor
         titleLabel.text = titleString
         contentWidth = (Float(width) > Float(contentWidth)) ? width : contentWidth
-        contentHeight = titleLabel.maxY
+        contentHeight = titleLabel.magi_maxY
         
     }
     
@@ -389,14 +389,14 @@ extension MagiPlaceHolderView {
                                    y: contentHeight+subViweMargin,
                                    width: width,
                                    height: size.height+5)
-        detailLabel.center = CGPoint(x: self.centerX,
-                                     y: detailLabel.centerY)
+        detailLabel.center = CGPoint(x: magi_centerX,
+                                     y: detailLabel.magi_centerY)
         
         detailLabel.font = self.titleLabFont
         detailLabel.text = self.detailString
         detailLabel.textColor = detailLabTextColor
         contentWidth = (Float(width) > Float(contentWidth)) ? width : contentWidth
-        contentHeight = detailLabel.maxY
+        contentHeight = detailLabel.magi_maxY
         
     }
     
@@ -420,8 +420,8 @@ extension MagiPlaceHolderView {
                                     y: contentHeight+subViewMargin,
                                     width: btnWidth,
                                     height: btnHeight)
-        actionButton.center = CGPoint(x: centerX,
-                                      y: actionButton.centerY)
+        actionButton.center = CGPoint(x: magi_centerX,
+                                      y: actionButton.magi_centerY)
         
         actionButton.setTitle(btnTitle, for: .normal)
         actionButton.setTitleColor(actionBtnTitleColor, for: .normal)

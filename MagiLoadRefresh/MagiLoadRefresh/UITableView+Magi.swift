@@ -71,6 +71,7 @@ extension UITableView: MagiInitAware {
     
     //reloadData
     @objc func magi_reloadData() {
+        self.magi_reloadData()
         magi.getDataAndSet()
     }
     

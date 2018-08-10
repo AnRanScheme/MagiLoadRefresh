@@ -24,7 +24,9 @@ class Magi {
             }
         }
     }
+
     var scrollView: UIScrollView?
+    
     // MAKR: - 根据 DataSource 判断是否自动显示 PlaceHolder
     public func startLoading() {
         placeHolder?.isHidden = true

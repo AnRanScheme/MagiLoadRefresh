@@ -17,15 +17,15 @@ extension UIScrollView {
         
     }
     
-    var magi: Magi {
+    var magiLoad: Magi {
         set {
             objc_setAssociatedObject(
                 self,
                 RuntimeKey.magiPlaceHolder!,
                 newValue,
                 .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            if magi.scrollView == nil {
-                magi.scrollView = self
+            if magiLoad.scrollView == nil {
+                magiLoad.scrollView = self
             }
         }
         get {
@@ -37,10 +37,77 @@ extension UIScrollView {
             }
             else {
                 let objc = Magi()
-                self.magi = objc
+                self.magiLoad = objc
                 return objc
             }
         }
     }
     
+}
+
+
+extension UIScrollView {
+
+    public var offsetX: CGFloat {
+        get {
+            return self.contentOffset.x
+        }
+        set {
+            var contentOffset = self.contentOffset
+            contentOffset.x = newValue
+            self.contentOffset = contentOffset
+        }
+    }
+
+    public var offsetY: CGFloat {
+        get {
+            return self.contentOffset.y
+        }
+        set {
+            var contentOffset = self.contentOffset
+            contentOffset.y = newValue
+            self.contentOffset = contentOffset
+        }
+    }
+
+    public var insetTop: CGFloat {
+        get {
+            return self.realContentInset.top
+        }
+        set{
+            var inset = self.contentInset
+            inset.bottom = newValue
+            if #available(iOS 11.0, *) {
+                inset.bottom -= (self.adjustedContentInset.top - self.contentInset.top)
+            }
+            self.contentInset = inset
+        }
+    }
+
+    public var insetBottom: CGFloat {
+        get {
+            return self.realContentInset.bottom
+        }
+        set{
+            var inset = self.contentInset
+            inset.bottom = newValue
+            if #available(iOS 11.0, *) {
+                inset.bottom -= (self.adjustedContentInset.bottom - self.contentInset.bottom)
+            }
+            self.contentInset = inset
+        }
+    }
+
+    public var contentHeight: CGFloat {
+        return self.contentSize.height
+    }
+
+    public var realContentInset: UIEdgeInsets {
+        if #available(iOS 11.0, *){
+            return self.adjustedContentInset
+        } else {
+            return self.contentInset
+        }
+    }
+
 }

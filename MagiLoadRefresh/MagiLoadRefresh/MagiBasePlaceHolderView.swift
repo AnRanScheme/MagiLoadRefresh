@@ -73,8 +73,8 @@ class MagiBasePlaceHolderView: UIView {
             of: UIScrollView.classForCoder()) {
             self.frame = CGRect.init(x: 0,
                                      y: 0,
-                                     width: view.width,
-                                     height: view.height)
+                                     width: view.magi_width,
+                                     height: view.magi_height)
             
         }
         
@@ -92,8 +92,8 @@ class MagiBasePlaceHolderView: UIView {
             return
         }
         if let newView = newSuperview {
-            self.width = newView.width
-            self.height = newView.height
+            self.magi_width = newView.magi_width
+            self.magi_height = newView.magi_height
         }
     }
     

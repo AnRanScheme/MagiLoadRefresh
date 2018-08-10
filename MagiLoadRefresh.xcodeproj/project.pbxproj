@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3556029B211D6745002FD910 /* CALayer+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556029A211D6745002FD910 /* CALayer+Magi.swift */; };
 		FABE4D80211AC6A700D4FBC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D6B211AC6A700D4FBC8 /* LaunchScreen.storyboard */; };
 		FABE4D82211AC6A700D4FBC8 /* UIScrollView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */; };
 		FABE4D83211AC6A700D4FBC8 /* MagiRunTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */; };
 		FABE4D84211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */; };
-		FABE4D85211AC6A700D4FBC8 /* UIView+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D71211AC6A700D4FBC8 /* UIView+Position.swift */; };
+		FABE4D85211AC6A700D4FBC8 /* UIView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D71211AC6A700D4FBC8 /* UIView+Magi.swift */; };
 		FABE4D86211AC6A700D4FBC8 /* MagiPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */; };
 		FABE4D87211AC6A700D4FBC8 /* Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D73211AC6A700D4FBC8 /* Magi.swift */; };
 		FABE4D88211AC6A700D4FBC8 /* UITableView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */; };
@@ -30,12 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3556029A211D6745002FD910 /* CALayer+Magi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Magi.swift"; sourceTree = "<group>"; };
 		FA0EEC1B210F17C100FDB40E /* magiLoadingPlaceHolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magiLoadingPlaceHolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABE4D6B211AC6A700D4FBC8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Magi.swift"; sourceTree = "<group>"; };
 		FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRunTime.swift; sourceTree = "<group>"; };
 		FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiBasePlaceHolderView.swift; sourceTree = "<group>"; };
-		FABE4D71211AC6A700D4FBC8 /* UIView+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Position.swift"; sourceTree = "<group>"; };
+		FABE4D71211AC6A700D4FBC8 /* UIView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Magi.swift"; sourceTree = "<group>"; };
 		FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiPlaceHolderView.swift; sourceTree = "<group>"; };
 		FABE4D73211AC6A700D4FBC8 /* Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magi.swift; sourceTree = "<group>"; };
 		FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Magi.swift"; sourceTree = "<group>"; };
@@ -95,7 +97,8 @@
 		FABE4D6D211AC6A700D4FBC8 /* MagiLoadRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				FABE4D71211AC6A700D4FBC8 /* UIView+Position.swift */,
+				FABE4D71211AC6A700D4FBC8 /* UIView+Magi.swift */,
+				3556029A211D6745002FD910 /* CALayer+Magi.swift */,
 				FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */,
 				FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */,
 				FABE4D76211AC6A700D4FBC8 /* UICollectionView+Magi.swift */,
@@ -224,9 +227,10 @@
 				FABE4D87211AC6A700D4FBC8 /* Magi.swift in Sources */,
 				FABE4D8A211AC6A700D4FBC8 /* UICollectionView+Magi.swift in Sources */,
 				FABE4DA3211AC98700D4FBC8 /* WebViewController.swift in Sources */,
-				FABE4D85211AC6A700D4FBC8 /* UIView+Position.swift in Sources */,
+				FABE4D85211AC6A700D4FBC8 /* UIView+Magi.swift in Sources */,
 				FABE4DA1211AC98700D4FBC8 /* MyEmptyView.swift in Sources */,
 				FABE4D88211AC6A700D4FBC8 /* UITableView+Magi.swift in Sources */,
+				3556029B211D6745002FD910 /* CALayer+Magi.swift in Sources */,
 				FABE4D82211AC6A700D4FBC8 /* UIScrollView+Magi.swift in Sources */,
 				FABE4D9E211AC98700D4FBC8 /* AppDelegate.swift in Sources */,
 				FABE4D9F211AC98700D4FBC8 /* ViewController.swift in Sources */,
