@@ -73,11 +73,11 @@ class TableViewController: UITableViewController {
         //空数据界面显示
         let placeHolder = MagiPlaceHolderView.placeHolderWithCustomView(
             customView: emptyView) as! MagiPlaceHolderView
-        tableView.magi.placeHolder = placeHolder
-        tableView.magi.placeHolder?.tapContentViewClosure = {
+        tableView.magiLoad.placeHolder = placeHolder
+        tableView.magiLoad.placeHolder?.tapContentViewClosure = {
             print("点击界面空白区域")
         }
-        tableView.magi.showPlaceHolder()
+        tableView.magiLoad.showPlaceHolder()
     }
     
     @objc fileprivate func reloadBtnAction(_ sender: UIButton) {
@@ -102,11 +102,11 @@ class TableViewController: UITableViewController {
             placeHolder.contentViewOffset = -100
             placeHolder.titleLabFont = UIFont.systemFont(ofSize: 18)
             placeHolder.titleLabTextColor = UIColor.purple
-            tableView.magi.placeHolder = placeHolder
-            tableView.magi.placeHolder?.tapContentViewClosure = {
+            tableView.magiLoad.placeHolder = placeHolder
+            tableView.magiLoad.placeHolder?.tapContentViewClosure = {
                 print("点击界面空白区域")
             }
-            tableView.magi.showPlaceHolder()
+            tableView.magiLoad.showPlaceHolder()
         }
     }
     

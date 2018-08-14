@@ -85,9 +85,9 @@ class CollectionViewController: UICollectionViewController {
         placeHolder.actionBtnBorderColor = UIColor.gray
         placeHolder.actionBtnCornerRadius = 10
         
-        collectionView?.magi.placeHolder = placeHolder
+        collectionView?.magiLoad.placeHolder = placeHolder
         //点击空白区域
-        collectionView?.magi.placeHolder?.tapContentViewClosure = {
+        collectionView?.magiLoad.placeHolder?.tapContentViewClosure = {
             print("点击")
         }
     }

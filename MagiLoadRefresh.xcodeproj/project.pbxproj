@@ -20,7 +20,6 @@
 		FABE4D8A211AC6A700D4FBC8 /* UICollectionView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D76211AC6A700D4FBC8 /* UICollectionView+Magi.swift */; };
 		FABE4D8B211AC6A700D4FBC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D77211AC6A700D4FBC8 /* Assets.xcassets */; };
 		FABE4D8D211AC6A700D4FBC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D79211AC6A700D4FBC8 /* Main.storyboard */; };
-		FABE4D91211AC6A700D4FBC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D7D211AC6A700D4FBC8 /* Info.plist */; };
 		FABE4D9E211AC98700D4FBC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D96211AC98700D4FBC8 /* AppDelegate.swift */; };
 		FABE4D9F211AC98700D4FBC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D98211AC98700D4FBC8 /* ViewController.swift */; };
 		FABE4DA0211AC98700D4FBC8 /* MyEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D99211AC98700D4FBC8 /* MyEmptyView.xib */; };
@@ -210,7 +209,6 @@
 			files = (
 				FABE4D8B211AC6A700D4FBC8 /* Assets.xcassets in Resources */,
 				FABE4D80211AC6A700D4FBC8 /* LaunchScreen.storyboard in Resources */,
-				FABE4D91211AC6A700D4FBC8 /* Info.plist in Resources */,
 				FABE4DA0211AC98700D4FBC8 /* MyEmptyView.xib in Resources */,
 				FABE4D8D211AC6A700D4FBC8 /* Main.storyboard in Resources */,
 			);

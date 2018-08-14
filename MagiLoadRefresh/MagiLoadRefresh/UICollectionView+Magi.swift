@@ -50,28 +50,28 @@ extension UICollectionView: MagiInitAware {
     //section
     @objc  func magi_insertSections(_ sections: NSIndexSet) {
         magi_insertSections(sections)
-        magi.getDataAndSet()
+        magiLoad.getDataAndSet()
     }
     
     @objc  func magi_deleteSections(_ sections: NSIndexSet) {
         magi_deleteSections(sections)
-        magi.getDataAndSet()
+        magiLoad.getDataAndSet()
     }
     
     //item
     @objc  func magi_insertItemsAtIndexPaths(at indexPaths: [IndexPath]){
         magi_insertItemsAtIndexPaths(at: indexPaths)
-        magi.getDataAndSet()
+        magiLoad.getDataAndSet()
     }
     
     @objc func magi_deleteItemsAtIndexPaths(at indexPaths: [IndexPath]){
         magi_deleteItemsAtIndexPaths(at: indexPaths)
-        magi.getDataAndSet()
+        magiLoad.getDataAndSet()
     }
     
     //reloadData
     @objc func magi_reloadData() {
         self.magi_reloadData()
-        magi.getDataAndSet()
+        magiLoad.getDataAndSet()
     }
 }
