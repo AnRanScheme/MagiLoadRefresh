@@ -62,7 +62,6 @@ struct MagiRunTime {
     ///
     /// - Parameter classType: 所属类型
     /// - Returns: 属性列表
-    
     static func properties(from classType: AnyClass) -> [objc_property_t] {
         var propNum: UInt32 = 0
         let properties = class_copyPropertyList(classType, &propNum)
