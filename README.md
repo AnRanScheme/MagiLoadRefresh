@@ -3,7 +3,7 @@ swift版下拉刷新,支持多种样式,同时支持,加载动画,网络错误�
 ### 引言
 这个小demo主要针对的UITableVIew, UICollectionVIew和UIWebview等等继承UIScrellVIew的控件,原理就是通过Runtime添加一个属性,然后在通过方法交换监听row的添加,来自动显示placeHolder,我准备了一个基本的样式,当然为了方便大家和一个app里面会有不同的样式的这种情况,我添加自定义的view添加方法.那么问题来了我为什么要写这么一个demo呢,原因是我的一个同为程序员的同学(龙哥说的就是你)说我写的展示空页面的代码太low,这就不能忍了,所以写了一个这种小工具(方便统一管理)
 ### git
-![Untitled.gif]https://github.com/AnRanScheme/MagiLoadRefresh/raw/master/Untitled.gif)
+![Untitled.gif]https://github.com/AnRanScheme/MagiLoadRefresh/raw/master/MagiLoadRefresh/Untitled.gif)
 ### 基本使用
 ####1.自定义空界面添加
 
