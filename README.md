@@ -6,6 +6,8 @@ swift版下拉刷新,支持多种样式,同时支持,加载动画,网络错误�
 ![Untitled.gif](https://upload-images.jianshu.io/upload_images/3410830-a5073d8681ecd08f.gif?imageMogr2/auto-orient/strip)
 ### 基本使用
 ####1.自定义空界面添加
+
+```
 let emptyView = Bundle.main.loadNibNamed(
 "MyEmptyView", owner: self, options: nil)?.last as! MyEmptyView
 emptyView.reloadBtn.addTarget(
@@ -20,10 +22,12 @@ tableView.magiRefresh.placeHolder?.tapBlankViewClosure = {
 print("点击界面空白区域")
 }
 tableView.magiRefresh.showPlaceHolder()
-注意自己创建的View一定要调用 
-``` MagiPlaceHolder.createCustomPlaceHolderView(emptyView)```
-将view包装起来
+```
+注意自己创建的View一定要调用 ``` MagiPlaceHolder.createCustomPlaceHolderView(emptyView)```将view包装起来
+
 ####2.使用我写好的基本页面
+
+```
 let placeHolder = MagiPlaceHolder.createPlaceHolderViewWithAction(
 imageName: "net_error_tip",
 title: "暂无数据，点击重新加载",
@@ -43,3 +47,5 @@ placeHolder.tapBlankViewClosure = {
 print("点击空白")
 }
 collectionView?.magiRefresh.placeHolder = placeHolder
+```
+要是想了解在Siwft中使用runtime的,我就不在这里多说了,代码很简单,有想了解可以点击[这里](https://www.jianshu.com/p/b5e391080f99)
