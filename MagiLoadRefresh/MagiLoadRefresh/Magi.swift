@@ -10,11 +10,11 @@ import UIKit
 
 class Magi {
     
-    var placeHolder: MagiPlaceHolderView? {
+    var placeHolder: MagiPlaceHolder? {
         didSet {
             guard let scrollView = self.scrollView else { return }
             for view in scrollView.subviews {
-                if view.isKind(of: MagiPlaceHolderView.classForCoder()) {
+                if view.isKind(of: MagiPlaceHolder.self) {
                     view.removeFromSuperview()
                 }
             }
@@ -82,7 +82,7 @@ class Magi {
     }
     
     fileprivate func show() {
-        if placeHolder?.isAutoShowPlaceHolderView == false {
+        if placeHolder?.isAutoShowPlaceHolder == false {
             placeHolder?.isHidden = true
             return
         }
@@ -90,7 +90,7 @@ class Magi {
     }
     
     fileprivate func hide() {
-        if placeHolder?.isAutoShowPlaceHolderView == false {
+        if placeHolder?.isAutoShowPlaceHolder == false {
             placeHolder?.isHidden = true
             return
         }

@@ -12,32 +12,38 @@ import UIKit
 extension UIScrollView {
     
     struct RuntimeKey {
-        static let magiPlaceHolder = UnsafeRawPointer.init(
-            bitPattern: "magiPlaceHolder".hashValue)
-        
+        static let magiRefresh = UnsafeRawPointer.init(
+            bitPattern: "magiRefresh".hashValue)
     }
     
-    var magiLoad: Magi {
+    var magiRefresh: Magi {
         set {
             objc_setAssociatedObject(
                 self,
-                RuntimeKey.magiPlaceHolder!,
+                RuntimeKey.magiRefresh!,
                 newValue,
                 .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            if magiLoad.scrollView == nil {
-                magiLoad.scrollView = self
+            if magiRefresh.scrollView == nil {
+                magiRefresh.scrollView = self
             }
         }
         get {
             if let objc = objc_getAssociatedObject(
                 self,
-                RuntimeKey.magiPlaceHolder!)
+                RuntimeKey.magiRefresh!)
                 as? Magi {
                 return objc
             }
             else {
                 let objc = Magi()
-                self.magiLoad = objc
+                objc_setAssociatedObject(
+                    self,
+                    RuntimeKey.magiRefresh!,
+                    objc,
+                    .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                if objc.scrollView == nil {
+                    objc.scrollView = self
+                }
                 return objc
             }
         }

@@ -33,6 +33,10 @@ class CollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
     }
     
+    deinit {
+        print(self.debugDescription+"------销毁了")
+    }
+    
     fileprivate func setupUI() {
         navigationController?.navigationBar.isTranslucent = false
         let layout = UICollectionViewFlowLayout()
@@ -69,14 +73,14 @@ class CollectionViewController: UICollectionViewController {
         
         
         // 创建方式二：target/action
-        let placeHolder = MagiPlaceHolderView.placeHolderActionViewWithImage(
-            imageStr: "net_error_tip",
-            titleStr: "暂无数据，点击重新加载",
-            detailStr: "",
-            btnTitleStr: "点击刷新",
+        let placeHolder = MagiPlaceHolder.createPlaceHolderViewWithAction(
+            imageName: "net_error_tip",
+            title: "暂无数据，点击重新加载",
+            detailTitle: "",
+            refreshBtnTitle: "点击刷新",
             target: self,
             action: #selector(reloadBtnAction))
-        
+
         placeHolder.titleLabTextColor = UIColor.red
         placeHolder.actionBtnFont = UIFont.systemFont(ofSize: 19)
         placeHolder.contentViewOffset = -50
@@ -84,12 +88,10 @@ class CollectionViewController: UICollectionViewController {
         placeHolder.actionBtnBorderWidth = 0.7
         placeHolder.actionBtnBorderColor = UIColor.gray
         placeHolder.actionBtnCornerRadius = 10
-        
-        collectionView?.magiLoad.placeHolder = placeHolder
-        //点击空白区域
-        collectionView?.magiLoad.placeHolder?.tapContentViewClosure = {
-            print("点击")
+        placeHolder.tapBlankViewClosure = {
+            print("点击空白")
         }
+        collectionView?.magiRefresh.placeHolder = placeHolder
     }
     
     func reloadDataWithCount(count: Int) {

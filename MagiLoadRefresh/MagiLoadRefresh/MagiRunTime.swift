@@ -23,20 +23,21 @@ struct MagiRunTime {
         let select2 = replace
         let select1Method = class_getInstanceMethod(classType, select1)
         let select2Method = class_getInstanceMethod(classType, select2)
-        guard (select1Method != nil && select2Method != nil) else {
-            return
+        guard let selectMetho1 = select1Method,
+            let selectMethod2 = select2Method else {
+                return
         }
         let didAddMethod  = class_addMethod(classType,
                                             select1,
-                                            method_getImplementation(select2Method!),
-                                            method_getTypeEncoding(select2Method!))
+                                            method_getImplementation(selectMethod2),
+                                            method_getTypeEncoding(selectMethod2))
         if didAddMethod {
             class_replaceMethod(classType,
                                 select2,
-                                method_getImplementation(select1Method!),
-                                method_getTypeEncoding(select1Method!))
+                                method_getImplementation(selectMetho1),
+                                method_getTypeEncoding(selectMetho1))
         } else {
-            method_exchangeImplementations(select1Method!, select2Method!)
+            method_exchangeImplementations(selectMetho1, selectMethod2)
         }
     }
     

@@ -19,27 +19,27 @@ extension UITableView: MagiInitAware {
     }
     
     private static let swizzleMethod: Void = {
-        //insertSections
+        /// insertSections
         let originalSelector = #selector(insertSections(_:with:))
         let swizzledSelector = #selector(magi_insertSections(_:with:))
         MagiRunTime.exchangeMethod(selector: originalSelector, replace: swizzledSelector, class: UITableView.self)
         
-        //deleteSections
+        /// deleteSections
         let originalSelector1 = #selector(deleteSections(_:with:))
         let swizzledSelector1 = #selector(magi_deleteSections(_:with:))
         MagiRunTime.exchangeMethod(selector: originalSelector1, replace: swizzledSelector1, class: UITableView.self)
         
-        //insertRows
+        /// insertRows
         let originalSelector2 = #selector(insertRows(at:with:))
         let swizzledSelector2 = #selector(magi_insertRowsAtIndexPaths(at:with:))
         MagiRunTime.exchangeMethod(selector: originalSelector2, replace: swizzledSelector2, class: UITableView.self)
         
-        //deleteRows
+        /// deleteRows
         let originalSelector3 = #selector(deleteRows(at:with:))
         let swizzledSelector3 = #selector(magi_deleteRowsAtIndexPaths(at:with:))
         MagiRunTime.exchangeMethod(selector: originalSelector3, replace: swizzledSelector3, class: UITableView.self)
         
-        //reload
+        /// reloadData
         let originalSelector4 = #selector(reloadData)
         let swizzledSelector4 = #selector(magi_reloadData)
         MagiRunTime.exchangeMethod(selector: originalSelector4, replace: swizzledSelector4, class: UITableView.self)
@@ -47,32 +47,37 @@ extension UITableView: MagiInitAware {
     }()
     
     
-    //section
-    @objc func magi_insertSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
+    /// section
+    @objc
+    fileprivate func magi_insertSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
         magi_insertSections(sections, with: animation)
-            magiLoad.getDataAndSet()
+            magiRefresh.getDataAndSet()
     }
     
-    @objc func magi_deleteSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
+    @objc
+    fileprivate func magi_deleteSections(_ sections: NSIndexSet, with animation: UITableViewRowAnimation) {
         magi_deleteSections(sections, with: animation)
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
-    //row
-    @objc  func magi_insertRowsAtIndexPaths(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation){
+    /// row
+    @objc
+    fileprivate func magi_insertRowsAtIndexPaths(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation){
         magi_insertRowsAtIndexPaths(at: indexPaths, with: animation)
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
-    @objc func magi_deleteRowsAtIndexPaths(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation){
+    @objc
+    fileprivate func magi_deleteRowsAtIndexPaths(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation){
         magi_deleteRowsAtIndexPaths(at: indexPaths, with: animation)
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
-    //reloadData
-    @objc func magi_reloadData() {
+    /// reloadData
+    @objc
+    fileprivate func magi_reloadData() {
         self.magi_reloadData()
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
 }

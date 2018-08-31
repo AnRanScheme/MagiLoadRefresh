@@ -11,9 +11,9 @@
 		FABE4D80211AC6A700D4FBC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE4D6B211AC6A700D4FBC8 /* LaunchScreen.storyboard */; };
 		FABE4D82211AC6A700D4FBC8 /* UIScrollView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */; };
 		FABE4D83211AC6A700D4FBC8 /* MagiRunTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */; };
-		FABE4D84211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */; };
+		FABE4D84211AC6A700D4FBC8 /* MagiBasePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolder.swift */; };
 		FABE4D85211AC6A700D4FBC8 /* UIView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D71211AC6A700D4FBC8 /* UIView+Magi.swift */; };
-		FABE4D86211AC6A700D4FBC8 /* MagiPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */; };
+		FABE4D86211AC6A700D4FBC8 /* MagiPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolder.swift */; };
 		FABE4D87211AC6A700D4FBC8 /* Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D73211AC6A700D4FBC8 /* Magi.swift */; };
 		FABE4D88211AC6A700D4FBC8 /* UITableView+Magi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */; };
 		FABE4D89211AC6A700D4FBC8 /* MagiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */; };
@@ -35,9 +35,9 @@
 		FABE4D6B211AC6A700D4FBC8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABE4D6E211AC6A700D4FBC8 /* UIScrollView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Magi.swift"; sourceTree = "<group>"; };
 		FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiRunTime.swift; sourceTree = "<group>"; };
-		FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiBasePlaceHolderView.swift; sourceTree = "<group>"; };
+		FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiBasePlaceHolder.swift; sourceTree = "<group>"; };
 		FABE4D71211AC6A700D4FBC8 /* UIView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Magi.swift"; sourceTree = "<group>"; };
-		FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiPlaceHolderView.swift; sourceTree = "<group>"; };
+		FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiPlaceHolder.swift; sourceTree = "<group>"; };
 		FABE4D73211AC6A700D4FBC8 /* Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magi.swift; sourceTree = "<group>"; };
 		FABE4D74211AC6A700D4FBC8 /* UITableView+Magi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Magi.swift"; sourceTree = "<group>"; };
 		FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiProtocol.swift; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 				FABE4D76211AC6A700D4FBC8 /* UICollectionView+Magi.swift */,
 				FABE4D6F211AC6A700D4FBC8 /* MagiRunTime.swift */,
 				FABE4D73211AC6A700D4FBC8 /* Magi.swift */,
-				FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift */,
-				FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolderView.swift */,
+				FABE4D70211AC6A700D4FBC8 /* MagiBasePlaceHolder.swift */,
+				FABE4D72211AC6A700D4FBC8 /* MagiPlaceHolder.swift */,
 				FABE4D75211AC6A700D4FBC8 /* MagiProtocol.swift */,
 			);
 			path = MagiLoadRefresh;
@@ -143,8 +143,8 @@
 				FABE4D99211AC98700D4FBC8 /* MyEmptyView.xib */,
 				FABE4D9A211AC98700D4FBC8 /* MyEmptyView.swift */,
 				FABE4D9B211AC98700D4FBC8 /* TableViewController.swift */,
-				FABE4D9C211AC98700D4FBC8 /* WebViewController.swift */,
 				FABE4D9D211AC98700D4FBC8 /* CollectionViewController.swift */,
+				FABE4D9C211AC98700D4FBC8 /* WebViewController.swift */,
 			);
 			path = LoadingPlacegolderExample;
 			sourceTree = "<group>";
@@ -233,10 +233,10 @@
 				FABE4D9E211AC98700D4FBC8 /* AppDelegate.swift in Sources */,
 				FABE4D9F211AC98700D4FBC8 /* ViewController.swift in Sources */,
 				FABE4DA2211AC98700D4FBC8 /* TableViewController.swift in Sources */,
-				FABE4D86211AC6A700D4FBC8 /* MagiPlaceHolderView.swift in Sources */,
+				FABE4D86211AC6A700D4FBC8 /* MagiPlaceHolder.swift in Sources */,
 				FABE4D89211AC6A700D4FBC8 /* MagiProtocol.swift in Sources */,
 				FABE4DA4211AC98700D4FBC8 /* CollectionViewController.swift in Sources */,
-				FABE4D84211AC6A700D4FBC8 /* MagiBasePlaceHolderView.swift in Sources */,
+				FABE4D84211AC6A700D4FBC8 /* MagiBasePlaceHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +300,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -353,6 +354,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -20,58 +20,74 @@ extension UICollectionView: MagiInitAware {
     }
     
     private static let swizzleMethod: Void = {
-        //insertSections
+        /// insertSections
         let originalSelector = #selector(insertSections(_:))
         let swizzledSelector = #selector(magi_insertSections(_:))
-        MagiRunTime.exchangeMethod(selector: originalSelector, replace: swizzledSelector, class: UICollectionView.self)
+        MagiRunTime.exchangeMethod(selector: originalSelector,
+                                   replace: swizzledSelector,
+                                   class: UICollectionView.self)
         
-        //deleteSections
+        /// deleteSections
         let originalSelector1 = #selector(deleteSections(_:))
         let swizzledSelector1 = #selector(magi_deleteSections(_:))
-        MagiRunTime.exchangeMethod(selector: originalSelector1, replace: swizzledSelector1, class: UICollectionView.self)
+        MagiRunTime.exchangeMethod(selector: originalSelector1,
+                                   replace: swizzledSelector1,
+                                   class: UICollectionView.self)
         
-        //insertRows
+        /// insertRows
         let originalSelector2 = #selector(insertItems(at:))
         let swizzledSelector2 = #selector(magi_insertItemsAtIndexPaths(at:))
-        MagiRunTime.exchangeMethod(selector: originalSelector2, replace: swizzledSelector2, class: UICollectionView.self)
+        MagiRunTime.exchangeMethod(selector: originalSelector2,
+                                   replace: swizzledSelector2,
+                                   class: UICollectionView.self)
         
-        //deleteRows
+        /// deleteRows
         let originalSelector3 = #selector(deleteItems(at:))
         let swizzledSelector3 = #selector(magi_deleteItemsAtIndexPaths(at:))
-        MagiRunTime.exchangeMethod(selector: originalSelector3, replace: swizzledSelector3, class: UICollectionView.self)
+        MagiRunTime.exchangeMethod(selector: originalSelector3,
+                                   replace: swizzledSelector3,
+                                   class: UICollectionView.self)
         
-        //reload
+        /// reloadData
         let originalSelector4 = #selector(reloadData)
         let swizzledSelector4 = #selector(magi_reloadData)
-        MagiRunTime.exchangeMethod(selector: originalSelector4, replace: swizzledSelector4, class: UICollectionView.self)
+        MagiRunTime.exchangeMethod(selector: originalSelector4,
+                                   replace: swizzledSelector4,
+                                   class: UICollectionView.self)
         
     }()
     
-    //section
-    @objc  func magi_insertSections(_ sections: NSIndexSet) {
+    /// section
+    @objc
+    fileprivate func magi_insertSections(_ sections: NSIndexSet) {
         magi_insertSections(sections)
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
-    @objc  func magi_deleteSections(_ sections: NSIndexSet) {
+    @objc
+    fileprivate func magi_deleteSections(_ sections: NSIndexSet) {
         magi_deleteSections(sections)
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
-    //item
-    @objc  func magi_insertItemsAtIndexPaths(at indexPaths: [IndexPath]){
+    /// item
+    @objc
+    fileprivate func magi_insertItemsAtIndexPaths(at indexPaths: [IndexPath]){
         magi_insertItemsAtIndexPaths(at: indexPaths)
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
-    @objc func magi_deleteItemsAtIndexPaths(at indexPaths: [IndexPath]){
+    @objc
+    fileprivate func magi_deleteItemsAtIndexPaths(at indexPaths: [IndexPath]){
         magi_deleteItemsAtIndexPaths(at: indexPaths)
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
     
-    //reloadData
-    @objc func magi_reloadData() {
+    /// reloadData
+    @objc
+    fileprivate func magi_reloadData() {
         self.magi_reloadData()
-        magiLoad.getDataAndSet()
+        magiRefresh.getDataAndSet()
     }
+    
 }

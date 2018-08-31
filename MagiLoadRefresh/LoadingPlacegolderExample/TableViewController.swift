@@ -31,6 +31,10 @@ class TableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
+    deinit {
+        print(self.debugDescription+"------销毁了")
+    }
+    
     fileprivate func setupUI() {
         navigationController?.navigationBar.isTranslucent = false
         tableView.separatorStyle = .none
@@ -71,13 +75,12 @@ class TableViewController: UITableViewController {
             for: .touchUpInside)
         emptyView.frame = view.bounds
         //空数据界面显示
-        let placeHolder = MagiPlaceHolderView.placeHolderWithCustomView(
-            customView: emptyView) as! MagiPlaceHolderView
-        tableView.magiLoad.placeHolder = placeHolder
-        tableView.magiLoad.placeHolder?.tapContentViewClosure = {
+        let placeHolder = MagiPlaceHolder.createCustomPlaceHolderView(emptyView)
+        tableView.magiRefresh.placeHolder = placeHolder
+        tableView.magiRefresh.placeHolder?.tapBlankViewClosure = {
             print("点击界面空白区域")
         }
-        tableView.magiLoad.showPlaceHolder()
+        tableView.magiRefresh.showPlaceHolder()
     }
     
     @objc fileprivate func reloadBtnAction(_ sender: UIButton) {
@@ -91,22 +94,21 @@ class TableViewController: UITableViewController {
         }else {
             sender.isSelected = true
             //空数据界面显示
-            let placeHolder = MagiPlaceHolderView.placeHolderActionViewWithImage(
-                imageStr: "no_data_tip",
-                titleStr: "暂无数据",
-                detailStr: "",
-                btnTitleStr: "",
-                btnClickClosure: {
+            let placeHolder = MagiPlaceHolder.createPlaceHolderViewWithClosure(
+                imageName: "no_data_tip",
+                title: "暂无数据",
+                detailTitle: "",
+                refreshBtnTitle: "") {
                     print("点击刷新按钮")
-            })
+            }
             placeHolder.contentViewOffset = -100
             placeHolder.titleLabFont = UIFont.systemFont(ofSize: 18)
             placeHolder.titleLabTextColor = UIColor.purple
-            tableView.magiLoad.placeHolder = placeHolder
-            tableView.magiLoad.placeHolder?.tapContentViewClosure = {
+            tableView.magiRefresh.placeHolder = placeHolder
+            tableView.magiRefresh.placeHolder?.tapBlankViewClosure = {
                 print("点击界面空白区域")
             }
-            tableView.magiLoad.showPlaceHolder()
+            tableView.magiRefresh.showPlaceHolder()
         }
     }
     

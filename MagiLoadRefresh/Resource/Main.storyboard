@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoadingPlaceHolderDemo-->
+        <!--🌰(栗子)-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="magiLoadingPlaceHolder" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <constraint firstItem="c09-dN-ZrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJf-Ws-Ppe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="LoadingPlaceHolderDemo" id="vYW-lb-Ml9"/>
+                    <navigationItem key="navigationItem" title="🌰(栗子)" id="vYW-lb-Ml9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
